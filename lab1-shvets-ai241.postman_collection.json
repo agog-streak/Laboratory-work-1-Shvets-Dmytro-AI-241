@@ -1,0 +1,301 @@
+{
+  "info": {
+    "_postman_id": "b8abd1bc-b918-4479-b40c-f1944f5021f0",
+    "name": "lab1-shvets-ai241",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54237535",
+    "_collection_link": "https://go.postman.co/collection/54237535-b8abd1bc-b918-4479-b40c-f1944f5021f0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "ADD USER",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":0,\r\n    \"firstName\":\"Dima\",\r\n    \"secondName\":\"Shvets\",\r\n    \"email\":\"test@mail.com\",\r\n    \"phone\":\"1234567890\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL USERS",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":0,\r\n    \"firstName\":\"Dima\",\r\n    \"secondName\":\"Shvets\",\r\n    \"email\":\"test@mail.com\",\r\n    \"phone\":\"1234567890\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "users"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Scooter",
+      "item": [
+        {
+          "name": "ADD SCOOTER",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":0,\r\n    \"model\":\"Xiaomi\",\r\n    \"avaible\":\"true\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/scooters",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "scooters"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL SCOOTERS",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":0,\r\n    \"model\":\"Xiaomi\",\r\n    \"avaible\":\"true\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/scooters",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "scooters"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ride",
+      "item": [
+        {
+          "name": "ADD RIDES",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":99,\r\n    \"startTime\":\"12:00\",\r\n    \"endTime\":\"12:30\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/rides",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "rides"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL RIDES",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":99,\r\n    \"startTime\":\"12:00\",\r\n    \"endTime\":\"12:30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/rides",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "rides"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Station",
+      "item": [
+        {
+          "name": "ADD STATIONS",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":99,\r\n    \"name\":\"New Station\",\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/stations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL STATIONS",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":99,\r\n    \"name\":\"New Station\",\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/stations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "stations"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ScooterCategory",
+      "item": [
+        {
+          "name": "ADD CATEGORIES",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":99,\r\n    \"type\":\"New Category\",\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL CATEGORIES",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":99,\r\n    \"type\":\"New Category\",\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
